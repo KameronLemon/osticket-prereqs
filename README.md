@@ -99,6 +99,74 @@ Open IIS as an admin and register PHP within the application.
 <p>
 Download and unzip osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”. After that Reload IIS
 
+![image](https://github.com/user-attachments/assets/d1996f83-e09d-483b-bd7e-dc9d39679710)
+
+
+Within PHP Manager Enable the Following Extensions
+
+-Enable: php_imap.dll
+
+-Enable: php_intl.dll
+
+-Enable: php_opcache.dll
+
+
+![image](https://github.com/user-attachments/assets/fcf1437c-2daf-457b-a2c7-e2aa0358e3a4)
+![image](https://github.com/user-attachments/assets/69a6b6a2-4cef-4c00-90a5-034cde3d4f59)
+
+
+</p>
+<p>
+Rename (C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php) to (C:\inetpub\wwwroot\osTicket\include\ost-config.php)
+
+![image](https://github.com/user-attachments/assets/b785d7c6-64e2-4e0b-b456-185a9a7d9e89)
+
+![image](https://github.com/user-attachments/assets/8225f734-95a9-41ea-99b9-ff477f5f9519)
+
+![image](https://github.com/user-attachments/assets/7087522a-2706-4d91-ae31-90c75435dc5b)
+
+Assign permissions to ost-config.php by removing properties (Disable inheritance -> Remove All) and then adding access (New Permissions -> Everyone -> All). 
+
+*Note: It usually not a good practice to set access to everyone. This is for the example shown.*
+
+![image](https://github.com/user-attachments/assets/8d19f476-16f1-4879-838d-8f7d09bf88a4)
+
+Fill out first two sections of the Osticket Registrations
+
+![image](https://github.com/user-attachments/assets/bb3e87f3-b8f2-486b-ba0d-49949f55c606)
+![image](https://github.com/user-attachments/assets/7d4a7330-dd15-4786-befe-e69ab8fd8c55)
+![image](https://github.com/user-attachments/assets/93347e15-fa6d-432b-ac45-f0bea04251bd)
+![image](https://github.com/user-attachments/assets/1691a542-7943-4c5d-bf03-33c35817249c)
+
+
+
+
+Download and install HeidiSQL. Then connect to your SQL Server using your created credentials. After that create a new database labled "osTicket"
+
+![image](https://github.com/user-attachments/assets/9e87347c-817f-47dd-9e08-39aa07948669)
+
+</p>
+<p>
+Fill out final section and initiate installtion.
+
+![image](https://github.com/user-attachments/assets/e1696fe8-82b5-4ddc-b0f9-beb61e5ba9a1)
+
+</p>
+<p>
+Congratulations! You have fully installed osTicket for use. If you have any questions you are more then welcome to contact me via LinkedIn!
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
